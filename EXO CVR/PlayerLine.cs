@@ -25,8 +25,8 @@ namespace EXO_CVR
                 yield return null;
             while (State)
             {
-                foreach (CVRPlayerEntity player in CVRPlayerManager.Instance.GetAllPlayers())
-                { 
+                CVRPlayerManager.Instance.GetAllPlayers().ToList().ForEach(player =>
+                {
                     try
                     {
                         if (XRDevice.isPresent)
@@ -37,8 +37,8 @@ namespace EXO_CVR
                         GetPlayerReady(player).SetPosition(0, player.PlayerObject.transform.position/*player.field_Private_VRCPlayerApi_0.GetBoneTransform(HumanBodyBones.Hips).position*/);
 
                     }
-                    catch { MelonLogger.Msg("Bruhhhh"); }
-                } 
+                    catch { MelonLogger.Msg("Failed To Create Line ESP"); }
+                });
                 yield return new WaitForEndOfFrame();
             }
             Disable();
