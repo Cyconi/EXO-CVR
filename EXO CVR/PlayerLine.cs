@@ -25,19 +25,20 @@ namespace EXO_CVR
                 yield return null;
             while (State)
             {
-                foreach (PuppetMaster Player in UnityEngine.Object.FindObjectsOfType(typeof(PuppetMaster)) as PuppetMaster[])
-                {
-                    try 
+                foreach (CVRPlayerEntity player in CVRPlayerManager.Instance.GetAllPlayers())
+                { 
+                    try
                     {
                         if (XRDevice.isPresent)
-                            GetPlayerReady(Player).SetPosition(1, GetContoller().position);
+                            GetPlayerReady(player).SetPosition(1, GetContoller().position);
                         else
-                            GetPlayerReady(Player).SetPosition(1, Camera.current.transform.position + Camera.current.transform.forward * 0.3f);
+                            GetPlayerReady(player).SetPosition(1, Camera.current.transform.position + Camera.current.transform.forward * 0.3f);
 
-                        GetPlayerReady(Player).SetPosition(0, Player.gameObject.transform.position/*player.field_Private_VRCPlayerApi_0.GetBoneTransform(HumanBodyBones.Hips).position*/);
+                        GetPlayerReady(player).SetPosition(0, player.PlayerObject.transform.position/*player.field_Private_VRCPlayerApi_0.GetBoneTransform(HumanBodyBones.Hips).position*/);
 
-                    } catch { MelonLogger.Msg("Bruhhhh"); }
-                }
+                    }
+                    catch { MelonLogger.Msg("Bruhhhh"); }
+                } 
                 yield return new WaitForEndOfFrame();
             }
             Disable();
@@ -52,9 +53,9 @@ namespace EXO_CVR
         private static Transform GetContoller() =>
              Load.ControllerRight.transform;
 
-        internal static LineRenderer GetPlayerReady(PuppetMaster Player)
+        internal static LineRenderer GetPlayerReady(CVRPlayerEntity Player)
         {
-            var LineRenderComp = Player.gameObject.GetOrAddComponents<LineRenderer>();
+            var LineRenderComp = Player.PlayerObject.GetOrAddComponents<LineRenderer>();
             LineRenderComp.enabled = true;
             LineRenderComp.startWidth = 0.006f;
             LineRenderComp.alignment = 0;
