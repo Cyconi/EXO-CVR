@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32319.34
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EXO CVR", "EXO CVR\EXO CVR.csproj", "{C6F2D9FF-FD41-4CCB-8271-9045F0E83D6B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C6F2D9FF-FD41-4CCB-8271-9045F0E83D6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6F2D9FF-FD41-4CCB-8271-9045F0E83D6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6F2D9FF-FD41-4CCB-8271-9045F0E83D6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6F2D9FF-FD41-4CCB-8271-9045F0E83D6B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3F197240-9258-4FDD-AE70-6CA8EC58D399}
+	EndGlobalSection
+EndGlobal
