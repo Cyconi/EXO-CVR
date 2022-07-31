@@ -1,4 +1,5 @@
-﻿using EXO_CVR.Modules;
+﻿using EXO_CVR.FishsCumCorner.Forms;
+using EXO_CVR.Modules;
 using MelonLoader;
 using System;
 using System.Collections;
@@ -22,8 +23,9 @@ namespace EXO_CVR
         internal static bool JetPackToggle = false;
         public override void OnApplicationStart()
         {
+            PatchAPI.EXOPatch.StartPatches();
             MelonCoroutines.Start(WindowName.WindowName.ChangeTitle());
-            MelonCoroutines.Start(LoadedUI());
+            MelonCoroutines.Start(LoadedUI()); 
         }
         internal static IEnumerator LoadedUI()
         {
@@ -87,21 +89,10 @@ namespace EXO_CVR
                 Process.GetCurrentProcess().Kill();
             }
 
-            if (GUI.Button(new Rect(120f, 66f, 100f, 30f), "3D Line ESP"))
+            if (GUI.Button(new Rect(120f, 66f, 100f, 30f), "FishMenu"))
             {
-                FloorDropToggle = !FloorDropToggle;
-                if (FloorDropToggle)
-                {
-                    PlayerLine.State = true;
-                    MelonCoroutines.Start(PlayerLine.Init());
-                    MelonLogger.Msg("ON");
-                }
-                if (!FloorDropToggle)
-                {
-                    PlayerLine.State = false;
-                    MelonCoroutines.Start(PlayerLine.Init());
-                    MelonLogger.Msg("OFF");
-                }
+                MainForm F = new MainForm();
+                F.Show();
             }
 
             BFlyToggle = GUI.Toggle(new Rect(7f, 32f, 100f, 30f), BFlyToggle, "FlyBinds");

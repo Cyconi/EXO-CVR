@@ -40,12 +40,30 @@
     <Reference Include="Assembly-CSharp-firstpass">
       <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\ChilloutVR\ChilloutVR_Data\Managed\Assembly-CSharp-firstpass.dll</HintPath>
     </Reference>
+    <Reference Include="DarkRift, Version=2.4.5.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\SteamLibrary\steamapps\common\ChilloutVR\ChilloutVR_Data\Managed\DarkRift.dll</HintPath>
+    </Reference>
+    <Reference Include="DarkRift.Client, Version=2.4.5.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\SteamLibrary\steamapps\common\ChilloutVR\ChilloutVR_Data\Managed\DarkRift.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="DarkRift.Server, Version=2.4.5.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\SteamLibrary\steamapps\common\ChilloutVR\ChilloutVR_Data\Managed\DarkRift.Server.dll</HintPath>
+    </Reference>
+    <Reference Include="DissonanceVoip, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\SteamLibrary\steamapps\common\ChilloutVR\ChilloutVR_Data\Managed\DissonanceVoip.dll</HintPath>
+    </Reference>
     <Reference Include="MelonLoader">
       <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\ChilloutVR\MelonLoader\MelonLoader.dll</HintPath>
     </Reference>
     <Reference Include="NicoKuroKusagi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -353,12 +371,23 @@
   <ItemGroup>
     <Compile Include="BaseModule.cs" />
     <Compile Include="CLog.cs" />
+    <Compile Include="FishsCumCorner\Config\ModConfig.cs" />
+    <Compile Include="FishsCumCorner\Forms\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FishsCumCorner\Forms\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FishsCumCorner\Lab\ObjectExploits.cs" />
+    <Compile Include="FishsCumCorner\Lab\ServerExploits.cs" />
     <Compile Include="Logging.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="Melon\Overrider.cs" />
     <Compile Include="Misc.cs" />
     <Compile Include="Modules\Utils.cs" />
     <Compile Include="Modules\Movement.cs" />
+    <Compile Include="PatchAPI\EXOPatch.cs" />
+    <Compile Include="PatchAPI\Patches\_NetworkedEvent.cs" />
     <Compile Include="PlayerESP.cs" />
     <Compile Include="PlayerLine.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -367,9 +396,16 @@
     <Compile Include="Wrappers\HudWrappers.cs" />
     <Compile Include="Wrappers\PlayerWrapper.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="FishsCumCorner\Mods\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FishsCumCorner\Forms\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>copy /Y "$(TargetDir)$(TargetName).dll" "C:\Program Files (x86)\Steam\steamapps\common\ChilloutVR\Mods\EXO.dll"</PostBuildEvent>
+    <PostBuildEvent>copy /Y "$(TargetDir)$(TargetName).dll" "D:\SteamLibrary\steamapps\common\ChilloutVR\Mods\EXO.dll"</PostBuildEvent>
   </PropertyGroup>
 </Project>

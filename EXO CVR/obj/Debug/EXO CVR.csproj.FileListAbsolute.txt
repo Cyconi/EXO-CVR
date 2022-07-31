@@ -146,3 +146,50 @@ C:\Users\jshil\Downloads\C#\EXO CVR\EXO CVR\obj\Debug\EXO CVR.csproj.CoreCompile
 C:\Users\jshil\Downloads\C#\EXO CVR\EXO CVR\obj\Debug\EXO CVR.csproj.CopyComplete
 C:\Users\jshil\Downloads\C#\EXO CVR\EXO CVR\obj\Debug\EXO CVR.dll
 C:\Users\jshil\Downloads\C#\EXO CVR\EXO CVR\obj\Debug\EXO CVR.pdb
+F:\repos\EXO-CVR\EXO CVR\bin\Debug\EXO CVR.dll
+F:\repos\EXO-CVR\EXO CVR\bin\Debug\EXO CVR.pdb
+F:\repos\EXO-CVR\EXO CVR\bin\Debug\DarkRift.Client.dll
+F:\repos\EXO-CVR\EXO CVR\bin\Debug\DarkRift.dll
+F:\repos\EXO-CVR\EXO CVR\bin\Debug\DarkRift.Server.dll
+F:\repos\EXO-CVR\EXO CVR\bin\Debug\DissonanceVoip.dll
+F:\repos\EXO-CVR\EXO CVR\bin\Debug\Mono.Cecil.dll
+F:\repos\EXO-CVR\EXO CVR\bin\Debug\MonoMod.Utils.dll
+F:\repos\EXO-CVR\EXO CVR\bin\Debug\MonoMod.RuntimeDetour.dll
+F:\repos\EXO-CVR\EXO CVR\bin\Debug\SteamVR.dll
+F:\repos\EXO-CVR\EXO CVR\bin\Debug\Bhaptics.Tact.dll
+F:\repos\EXO-CVR\EXO CVR\bin\Debug\SALSA-LipSync.dll
+F:\repos\EXO-CVR\EXO CVR\bin\Debug\MeshBakerCore.dll
+F:\repos\EXO-CVR\EXO CVR\bin\Debug\TobiiXRCore.dll
+F:\repos\EXO-CVR\EXO CVR\bin\Debug\Tobii.GameIntegration.Net.dll
+F:\repos\EXO-CVR\EXO CVR\bin\Debug\SALSA.dll
+F:\repos\EXO-CVR\EXO CVR\bin\Debug\AwesomeTechnologies.VegetationStudioPro.Runtime.dll
+F:\repos\EXO-CVR\EXO CVR\bin\Debug\Valve.Newtonsoft.Json.dll
+F:\repos\EXO-CVR\EXO CVR\bin\Debug\Aura2_Core.dll
+F:\repos\EXO-CVR\EXO CVR\bin\Debug\Newtonsoft.Json.dll
+F:\repos\EXO-CVR\EXO CVR\bin\Debug\AVProVideo.Runtime.dll
+F:\repos\EXO-CVR\EXO CVR\bin\Debug\MagicaCloth.dll
+F:\repos\EXO-CVR\EXO CVR\bin\Debug\Cohtml.Runtime.dll
+F:\repos\EXO-CVR\EXO CVR\bin\Debug\TobiiXRSDK.dll
+F:\repos\EXO-CVR\EXO CVR\bin\Debug\ICSharpCode.SharpZipLib.dll
+F:\repos\EXO-CVR\EXO CVR\bin\Debug\UniTask.dll
+F:\repos\EXO-CVR\EXO CVR\bin\Debug\cohtml.Net.dll
+F:\repos\EXO-CVR\EXO CVR\bin\Debug\ShapesRuntime.dll
+F:\repos\EXO-CVR\EXO CVR\bin\Debug\PWCommon3DLL.dll
+F:\repos\EXO-CVR\EXO CVR\bin\Debug\Crc32.NET.dll
+F:\repos\EXO-CVR\EXO CVR\bin\Debug\AssetRipper.VersionUtilities.dll
+F:\repos\EXO-CVR\EXO CVR\bin\Debug\AssetsTools.NET.dll
+F:\repos\EXO-CVR\EXO CVR\bin\Debug\Tomlet.dll
+F:\repos\EXO-CVR\EXO CVR\bin\Debug\Mono.Cecil.Pdb.dll
+F:\repos\EXO-CVR\EXO CVR\bin\Debug\Mono.Cecil.Mdb.dll
+F:\repos\EXO-CVR\EXO CVR\bin\Debug\Mono.Cecil.Rocks.dll
+F:\repos\EXO-CVR\EXO CVR\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+F:\repos\EXO-CVR\EXO CVR\bin\Debug\Cohtml.RenderingBackend.dll
+F:\repos\EXO-CVR\EXO CVR\bin\Debug\TobiiXRG2OM.dll
+F:\repos\EXO-CVR\EXO CVR\bin\Debug\MelonLoader.xml
+F:\repos\EXO-CVR\EXO CVR\obj\Debug\EXO CVR.csproj.AssemblyReference.cache
+F:\repos\EXO-CVR\EXO CVR\obj\Debug\EXO CVR.csproj.CoreCompileInputs.cache
+F:\repos\EXO-CVR\EXO CVR\obj\Debug\EXO CVR.csproj.CopyComplete
+F:\repos\EXO-CVR\EXO CVR\obj\Debug\EXO CVR.dll
+F:\repos\EXO-CVR\EXO CVR\obj\Debug\EXO CVR.pdb
+F:\repos\EXO-CVR\EXO CVR\obj\Debug\EXO_CVR.FishsCumCorner.Forms.MainForm.resources
+F:\repos\EXO-CVR\EXO CVR\obj\Debug\EXO CVR.csproj.GenerateResource.cache
