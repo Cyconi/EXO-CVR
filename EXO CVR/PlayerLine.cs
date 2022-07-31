@@ -32,7 +32,7 @@ namespace EXO_CVR
                         if (XRDevice.isPresent)
                             GetPlayerReady(player).SetPosition(1, GetContoller().position);
                         else
-                            GetPlayerReady(player).SetPosition(1, Camera.current.transform.position + Camera.current.transform.forward * 0.3f);
+                            GetPlayerReady(player).SetPosition(1, PlayerWrapper.LocalPlayer().transform.position);//Camera.current.transform.position + Camera.current.transform.forward * 0.3f);
 
                         GetPlayerReady(player).SetPosition(0, player.PlayerObject.transform.position/*player.field_Private_VRCPlayerApi_0.GetBoneTransform(HumanBodyBones.Hips).position*/);
 
@@ -55,7 +55,7 @@ namespace EXO_CVR
 
         internal static LineRenderer GetPlayerReady(CVRPlayerEntity Player)
         {
-            var LineRenderComp = Player.PlayerObject.GetOrAddComponents<LineRenderer>();
+            var LineRenderComp = Player.PlayerObject.GetOrAddComponents<LineRenderer>();            
             LineRenderComp.enabled = true;
             LineRenderComp.startWidth = 0.006f;
             LineRenderComp.alignment = 0;
